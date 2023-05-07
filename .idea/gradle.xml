@@ -7,6 +7,7 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="Embedded JDK" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -14,10 +15,7 @@
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/designsystem" />
             <option value="$PROJECT_DIR$/feature" />
-            <option value="$PROJECT_DIR$/feature/azkari" />
             <option value="$PROJECT_DIR$/feature/dashboard" />
-            <option value="$PROJECT_DIR$/feature/feeds" />
-            <option value="$PROJECT_DIR$/feature/nearby" />
             <option value="$PROJECT_DIR$/feature/settings" />
           </set>
         </option>

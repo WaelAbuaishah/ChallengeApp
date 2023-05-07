@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Azkari</string>
+    <string name="app_name">Challenge</string>
     <string name="title_feature">Feature</string>
     <string name="title_build_logic">build-logc</string>
 </resources>

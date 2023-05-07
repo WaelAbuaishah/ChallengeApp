@@ -12,13 +12,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Azkari"
+rootProject.name = "Challenge"
 include ':app'
 include ':feature'
 include ':feature:dashboard'
-include ':feature:feeds'
-include ':feature:azkari'
-include ':feature:nearby'
 include ':feature:settings'
 include ':core'
 include ':core:designsystem'
