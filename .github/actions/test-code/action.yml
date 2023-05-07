@@ -1,0 +1,24 @@
+name: 'Test code'
+description: 'Run unit tests and check code quality depending on the event that triggered the workflow this action is used in'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Check code quality for main
+      if: ${{ github.event_name == 'push' && github.ref == 'main' }}
+      shell: bash
+      run: |
+        ./gradlew lint -x detekt
+
+    - name: Check code quality for pull request
+      if: ${{ github.event_name == 'pull_request' }}
+      shell: bash
+      run: |
+        ./gradlew detekt lintForChangedModules \
+          --currentBranchName ${{ github.head_ref }} \
+          --targetBranchName ${{ github.event.pull_request.base.ref }}
+
+    - name: Run tests
+      if: ${{ github.event_name == 'pull_request' }}
+      shell: bash
+      run: ./gradlew testDebugUnitTest --stacktrace
