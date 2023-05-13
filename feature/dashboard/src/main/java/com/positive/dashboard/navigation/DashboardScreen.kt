@@ -25,8 +25,8 @@ fun DashboardRoute() {
             Arrangement.Center,
             Alignment.CenterHorizontally
         ) {
-            Text(text = "Dashboard screen details", modifier = Modifier.clickable {
-
+            Text(text = "Dashboard screen", modifier = Modifier.clickable {
+                println("<top>.DashboardRoute")
             })
         }
     }
